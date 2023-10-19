@@ -9,3 +9,8 @@ function updateEmployeeWithKeyAndValue(employee, key, value) {
   updatedEmployee[key] = value;
   return updatedEmployee;
 }
+function deleteFromEmployeeByKey(employee, key) {
+  const newEmployee = { ...employee };
+  delete newEmployee[key];
+  return newEmployee;
+}
